@@ -74,6 +74,12 @@
     <Compile Include="userLogin.Designer.cs">
       <DependentUpon>userLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="userMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userMain.Designer.cs">
+      <DependentUpon>userMain.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +94,9 @@
     </Compile>
     <EmbeddedResource Include="userLogin.resx">
       <DependentUpon>userLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userMain.resx">
+      <DependentUpon>userMain.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

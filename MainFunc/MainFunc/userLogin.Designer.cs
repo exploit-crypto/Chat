@@ -79,6 +79,7 @@
             this.metroButton1.TabIndex = 3;
             this.metroButton1.Text = "Confirm";
             this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // materialLabel2
             // 
