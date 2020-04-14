@@ -30,14 +30,33 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.userLogin1 = new MainFunc.userLogin();
+            this.userMain1 = new MainFunc.userMain();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.userLogin1);
+            this.panel1.Controls.Add(this.userMain1);
             this.panel1.Location = new System.Drawing.Point(0, 64);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 386);
             this.panel1.TabIndex = 0;
+            // 
+            // userLogin1
+            // 
+            this.userLogin1.Location = new System.Drawing.Point(0, 0);
+            this.userLogin1.Name = "userLogin1";
+            this.userLogin1.Size = new System.Drawing.Size(800, 386);
+            this.userLogin1.TabIndex = 1;
+            // 
+            // userMain1
+            // 
+            this.userMain1.Location = new System.Drawing.Point(0, 0);
+            this.userMain1.Name = "userMain1";
+            this.userMain1.Size = new System.Drawing.Size(800, 386);
+            this.userMain1.TabIndex = 0;
             // 
             // frmMain
             // 
@@ -47,8 +66,9 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
-            this.Text = "Form1";
+            this.Text = "Shared";
             this.Load += new System.EventHandler(this.frmMain_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -56,6 +76,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private userLogin userLogin1;
+        private userMain userMain1;
     }
 }
 
