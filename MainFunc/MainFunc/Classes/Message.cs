@@ -34,6 +34,7 @@ namespace MainFunc.Classes
         }
         public Message(string _user, MsgType _type) : this(_user, "", _type) { }
         public Message(MsgType _type) : this("", "", _type) { }
+        
     }
     public enum MsgType { Msg, Start, Join, Left }
 }
