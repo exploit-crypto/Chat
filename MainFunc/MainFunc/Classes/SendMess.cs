@@ -19,5 +19,9 @@ namespace MainFunc.Classes
             this.msgType = _msgType;
             this.sendTo = _sendTo;
         }
+        //string SendFrom() 
+        //{
+        
+        //}
     }
 }
