@@ -36,5 +36,24 @@ namespace MainFunc.Classes
             }
             return value;
         }
+
+        static void Test() 
+        {
+            CreateKeys();
+
+            byte[] userData = Encoding.UTF8.GetBytes("Alice");
+            byte[] userSignature = CreateSignature(userData, userKeySignature);
+            Console.WriteLine("User created signature: {0}",
+                  Convert.ToBase64String(userSignature));
+
+            if (VerifySignature(userData, userSignature, userPublicKeyBlop))
+            {
+                Console.WriteLine("Сигнатуры совпадают. Подпись была успешно проверена.");
+            }
+        }
+
+
+
+
     }
 }

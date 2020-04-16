@@ -50,9 +50,6 @@ namespace MainFunc
             panel1.Controls.Add(new userLogin());
         }
 
-        private void userMain2_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
