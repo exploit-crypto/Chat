@@ -43,7 +43,7 @@ namespace MainFunc.Classes
 
             byte[] userData = Encoding.UTF8.GetBytes("Alice");
             byte[] userSignature = CreateSignature(userData, userKeySignature);
-            Console.WriteLine("User created signature: {0}",
+            Console.WriteLine("User created signature:  {0}",
                   Convert.ToBase64String(userSignature));
 
             if (VerifySignature(userData, userSignature, userPublicKeyBlop))
